@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"><p>{{a.b}}</p><p>{{c.d}}</p></div> 
+    <script src="./mvvm.js"></script>
+    <script>
+        let vue = new Vue({
+            el:'app',
+            data:{
+                a:{
+                    b:'我是a的值啊'
+                },
+                c:{
+                    d:'我是b的值啊'
+                }
+            }
+        })
+    </script>
+</body>
+</html>
